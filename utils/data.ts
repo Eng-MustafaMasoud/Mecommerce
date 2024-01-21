@@ -1,0 +1,22 @@
+export const LinksList=[
+    {
+        title:"Home",
+        navigation:"/"
+    },
+    {
+        title:"Shop",
+        navigation:"/shop"
+    },
+    {
+        title:"Cart",
+        navigation:"/cart"
+    },
+    {
+        title:"Profile",
+        navigation:"/profile"
+    },
+    {
+        title:"Studio",
+        navigation:"/studio"
+    },
+]
