@@ -2,13 +2,15 @@
 
 import { CiSearch } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
-
+import { HiMenuAlt2 } from "react-icons/hi";
 import Link from "next/link";
 import { LinksList } from "@/utils/data";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import MobileNav from "./MobileNav";
 const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [toggle,setToggle]=useState<boolean>(false)
 
   const pathname = usePathname();
   return (
@@ -54,6 +56,11 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <HiMenuAlt2 className=" inline-flex md:hidden cursor-pointer w-8 h-6" onClick={()=>setToggle(!toggle)}/>
+{
+  toggle&&
+        <MobileNav setToggle={setToggle}/>
+}
       </nav>
     </header>
   );
