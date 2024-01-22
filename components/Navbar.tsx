@@ -59,7 +59,7 @@ const Navbar = () => {
         <HiMenuAlt2 className=" inline-flex md:hidden cursor-pointer w-8 h-6" onClick={()=>setToggle(!toggle)}/>
 {
   toggle&&
-        <MobileNav setToggle={setToggle}/>
+        <MobileNav setToggle ={setToggle}/>
 }
       </nav>
     </header>
