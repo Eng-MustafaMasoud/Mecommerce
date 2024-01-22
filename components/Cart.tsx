@@ -127,7 +127,7 @@ const Cart = () => {
               books, electronics, videos, etc. and make it happy.
             </p>
             <Link
-              href={"/"}
+              href={"/shop"}
               className="bg-primeColor rounded-md cursor-pointer hover:bg-black active:bg-gray-900 px-8 py-2 font-semibold text-lg text-gray-200 hover:text-white duration-300"
             >
               Continue Shopping
